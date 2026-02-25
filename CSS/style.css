@@ -62,6 +62,7 @@ nav{
     float: left;
     line-height: 80px;
     margin-left: 10px;
+    border: none;
 }
 .nav ul{
     float: right;

@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1st Webpage </title>
+    <title>1st Webpage</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" type="image/x-icon" href="Assests/Icon.jpg">
 </head>
-
 <body>
 
     <h1>WEBPAGE</h1>
@@ -73,303 +71,359 @@
         </li>
     </ul>
 
+    <h3>More ordered lists</h3>
+    <ol>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+    </ol>
+    <ol start="4">
+        <li>Orange</li>
+        <li>Grapes</li>
+        <li>Guava</li>
+    </ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
-<table border="2">
-    <tr>
-        <td rowspan="3" align="center">Day</td>
-        <td align="center" colspan="3">Seminar</td>
+    <h2>User Information</h2>
 
-    </tr>
-    <tr>
-        <td colspan="2">schedule</td>
-        <td rowspan="2" align="center">Topic</td>
-    </tr>
-    <tr>
-        <td>Begin</td>
-        <td>End</td>
+    <form action="" method="">
+        <table border="2">
+            <tr>
+                <td colspan="3" align="center">Colspanned</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Rowspanned</td>
+                <td>Username <input type="text"></td>
+                <td>Password <input type="password"></td>
+            </tr>
+            <tr>
+                <td>Gender <br> <input type="radio" name="Gender" id="Male">Male<br><input type="radio" name="Gender" id="Female">Female</td>
+                <td>Date of Birth <br><input type="date"></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">ColSpanned</td>
+            </tr>
+        </table>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
 
-    </tr>
-    <tr>
-        <td rowspan="2">Monday</td>
-        <td rowspan="2">8:00</td>
-        <td rowspan="2">5:00</td>
-        <td align="center">Introduction To XML</td>
-    </tr>
-    <tr>
-        <td align="center">Validity: DTD and Relax NG</td>
-    </tr>
-    <tr>
-        <td rowspan="3">Tuesday</td>
-        <td>8:00</td>
-        <td>11:00</td>
-
-        <td rowspan="2" align="center">Xpath</td>
-    </tr>
-    <tr>
-        <td>11:00</td>
-        <td>2:00</td>
-    </tr>
-    <tr>
-        <td>2:00</td>
-        <td>5:00</td>
-        <td align="center">XSL Transformations</td>
-    </tr>
-    <tr>
-        <td>Wednesday</td>
-        <td>8:00</td>
-        <td>12:00</td>
-        <td align="center">XSL Formatting Objects</td>
-    </tr>
-</table>
-
-<h1 style="color: aqua; background-color: blue;">CSS</h1>
-<p>Types of CSS</p>
-
-<ol>
-    <li>Inline CSS</li>
-    <li>External CSS</li>
-    <li>Internal CSS</li>
-</ol>
-
-<h2>Selectors</h2>
-<ul>
-    <li>Element selectors are the tags used to style the code.</li>
-    <li>"*" is known as Universal selector.</li>
-    <li class="p">Hello p.p class paragraph selector.</li>
-</ul>
-<h2>Margin and padding</h2>
-<p>Outer space around border is called margin. Inner space around border is called padding.</p>
-
-<h1>Course</h1>
-<span>Web CIT</span>
-<ol>
-    <li>Python</li>
-    <li>Django</li>
-    <li>Flask</li>
-    <li>Fast API</li>
-</ol>
-<span>Full Stack</span>
-<ol>
-    <li>HTML, CSS, JS</li>
-    <li>React JS</li>
-    <li>Node JS</li>
-    <li>Express JS</li>
-</ol>
-
-<h1>HTML</h1>
-<p>HTML was also known as www in past. HTML was introduced in 1991. www was named as HTML in 1993. "HTML" Its 1st
-    version was HTML 1.0 and its latest version is HTML5 which was launched in 2016.</p>
-
-<h2 align="center">Contact Details</h2>
-<fieldset>
-    <p>Please enter your personal details:</p>
-    <label for="firstName">First Name:* <input type="text" placeholder="First Name" id="firstName"></label>
-    <br><br>
-    <label for="lastName">Last Name:* <input type="text" placeholder="Last Name" id="lastName"></label>
-    <br><br>
-    <label for="Address">Street Address: <input type="text" placeholder="Street Address" id="Address"></label>
-    <br><br>
-    <label for="City">Town/City <input type="text" placeholder="Town/City" id="City"></label>
-    <br><br>
-    <label for="zipCode">Postcode/zip: <input type="text" placeholder="Postcode/zip" id="zipCode"></label>
-    <br><br>
-    <label for="Telephone">Telephone: <input type="tel" placeholder="Telephone" id="Telephone"></label>
-    <br><br>
-    <label for="Mobile">Mobile: <input type="tel" placeholder="Mobile" id="Mobile"></label>
-    <br><br>
-    <label for="Email">Email Address:* <input type="email" placeholder="Email Address" id="Email"></label>
-    <br><br>
-    <pre>Field marked * are required.
-    <input type="submit" value="Submit"></pre>
-</fieldset>
-
-<br><br>
-
-<table border="2">
-    <caption>Home assignment</caption>
-    <tr>
-        <td>Name</td>
-        <td><input type="text"></td>
-    </tr>
-    <tr>
-        <td>Password</td>
-        <td><input type="password"></td>
-    </tr>
-    <tr>
-        <td>Confirm Password</td>
-        <td><input type="password"></td>
-    </tr>
-    <tr>
-        <td>Email</td>
-        <td><input type="email"></td>
-    </tr>
-    <tr>
-        <td>Gender</td>
-        <td><input type="radio" name="Gender" id="Male">Male <input type="radio" name="Gender" id="Female">Female</td>
-    </tr>
-    <tr>
-        <td>CNIC</td>
-        <td><input type="text"></td>
-    </tr>
-    <tr>
-        <td>Country</td>
-        <td><input type="text"></td>
-    </tr>
-    <tr>
-        <td>City</td>
-        <td><input type="text"></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td><input type="submit" value="Register"></td>
-    </tr>
-</table>
-
-<hr>
-
-</body> <br><br>
-<input type="submit" value="Submit">
-</form>
-</table>
-</tr>
-<td colspan="3" align="center">ColSpanned</td>
-<tr> </tr>
-<td>Date of Birth <br><input type="date"></td>
-<td>Gender <br> <input type="radio" name="Gender" id="Male">Male<br><input type="radio" name="Gender" id="Female">Female
-</td>
-<tr> </tr>
-<td>Password <input type="password"></td>
-<td>Username <input type="text"></td>
-<td rowspan="3">Rowspanned</td>
-<tr> </tr>
-<td colspan="3" align="center">Colspanned</td>
-<tr>
     <table border="2">
-        <form action="" method="">
-            <h2>User Information</h2>
-            </fieldset>
-        </form> <label for="week">week: <input type="week" name="week" id="week"></label><br> <label for="url">url:
-            <input type="url" name="url" id="url"></label> <br>
-        <label for="Time">Time: <input type="time" name="Time" id="Time"></label><br>
-        <label for="Text">Text: <input type="text" name="Text" id="Text"></label> <br>
-        <label for="tel">tel: <input type="tel" name="tel" id="tel"></label> <br>
-        <label for="submit">submit: <input type="submit" name="submit" id="submit"></label> <br>
-        <label for="search">search: <input type="search" name="search" id="search"></label> <br>
-        <label for="reset">reset: <input type="reset" name="reset" id="reset"></label> <br>
-        <label for="range">range: <input type="range" name="range" id="range"></label> <br>
-        <label for="radio">radio: <input type="radio" name="radio" id="radio"></label> <br>
-        <label for="password2">password: <input type="password" name="password2" id="password2"></label> <br>
-        <label for="number">number: <input type="number" name="number" id="number"></label> <br>
-        <label for="month">month: <input type="month" name="month" id="month"></label> <br>
-        <label for="image">image: <input type="button" name="image" id="image"></label> <br>
-        <label for="hidden">hidden: <input type="hidden" name="hidden" id="hidden"></label> <br>
-        <label for="file">file: <input type="file" name="file" id="file"></label> <br>
-        <label for="email">email: <input type="email" name="email" id="email" placeholder=" Your E-Mail"></label> <br>
-        <label for="datetime-local">datetime-local: <input type="datetime-local" name="datetime-local"
-                id="datetime-local"></label> <br>
-        <label for="Color">Color: <input type="color" name="color" id="color"></label> <br>
-        <label for="date">Date: <input type="date" name="date" id="date"></label> <br>
-        <label for="checkbox">checkbox: <input type="checkbox" name="checkbox" id="checkbox"></label> <br>
-        <label for="button">Button: <input type="button" name="Button" id="button"></label>
-        <form action="" method="">
-            <legend>Assignment Form:</legend>
-            <fieldset> </fieldset>
-        </form> <textarea name="About You" id="About"></textarea> <br> <label for="About">About You</label> <br>
-        <label><input type="checkbox" id="CSS" name="skill" value="css"> CSS</label> <label><input type="checkbox"
-                id="HTML" name="skill" value="html"> HTML</label>
-        <p>Skills:</p>
-        </p> <label>Trans: <input type="radio" id="Trans" name="gender" value="trans"></label> <label>Female: <input
-                type="radio" id="Female" name="gender" value="female"></label> <label>Male: <input type="radio"
-                id="Male" name="gender" value="male"></label>
-        <p> <input type="password" id="password" name="password"> <label for="password">Password:</label> <br> <input
-                type="email" id="email1" name="email"> <label for="email1">Email:</label> <br> <input type="text"
-                id="username" name="username"> <label for="username">Username:</label>
-        <form action="" method="">
-            <legend>Form:</legend>
-            <fieldset>
-                <!-- Forms --> <br>
+        <tr>
+            <td rowspan="3" align="center">Day</td>
+            <td align="center" colspan="3">Seminar</td>
+        </tr>
+        <tr>
+            <td colspan="2">schedule</td>
+            <td rowspan="2" align="center">Topic</td>
+        </tr>
+        <tr>
+            <td>Begin</td>
+            <td>End</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00</td>
+            <td rowspan="2">5:00</td>
+            <td align="center">Introduction To XML</td>
+        </tr>
+        <tr>
+            <td align="center">Validity: DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00</td>
+            <td>11:00</td>
+            <td rowspan="2" align="center">Xpath</td>
+        </tr>
+        <tr>
+            <td>11:00</td>
+            <td>2:00</td>
+        </tr>
+        <tr>
+            <td>2:00</td>
+            <td>5:00</td>
+            <td align="center">XSL Transformations</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00</td>
+            <td>12:00</td>
+            <td align="center">XSL Formatting Objects</td>
+        </tr>
     </table>
-</tr>
-<td>L2</td>
-<td>L1</td>
-<tr> </tr>
-<td>s2</td>
-<td>s1</td>
-<tr> </tr>
-<td>i2</td>
-<td>i1</td>
-<tr>
-    <caption>TABLE NUMBER 4</caption>
-    <table border="2"> </table>
-</tr>
-<td></td>
-<td></td>
-<td>Wahab</td>
-<tr> </tr>
-<td></td>
-<td colspan="2" rowspan="2">123456789</td>
-<td>Wahab</td>
-<tr> </tr>
-<td>Emergency</td>
-<td>Contact</td>
-<td>Name</td>
-<tr>
-    <caption>Table Number 3</caption>
-    <table border="2"> </table>
-    </tfoot>
-</tr>
-<td>result</td>
-<td>result</td>
-<tr>
-    <tfoot>
-        </tbody>
-</tr>
-<td>20</td>
-<td>WAHAB</td>
-<tr> </tr>
-<td>19</td>
-<td>Wahab</td>
-<tr>
-    <tbody>
-        </thead>
-</tr>
-<th>age</th>
-<th>name</th>
-<tr>
-    <thead>
-        <caption>Table Number 2</caption>
-        <table border="2"> </table>
-        </tbody>
-</tr>
-<td>0305 jado kro odo band</td>
-<td>19</td>
-<td>Wahab</td>
-<tr>
-    <tbody>
-        </thead>
-</tr>
-<th>contact</th>
-<th>age</th>
-<th>name</th>
-<tr>
-    <thead>
-        <caption>Table Number 1</caption>
-        <table border="2"> <!-- Tables --> </ol>
-            <li>Lists</li>
-            <li>Forms</li>
-            <li>Table</li>
-            <ol>
-                <p>Three things are most important in web development:</p>
-            </ol>
-            <li>Guava</li>
-            <li>Grapes</li>
-            <li>Orange</li>
-            <ol start="4"> </ol>
-            <li>Banana</li>
-            <li>Mango</li>
-            <li>Apple</li>
-            <ol>
- <h1>Creating first navigation bar</h1>
+
+    <h1 style="color: aqua; background-color: blue;">CSS</h1>
+    <p>Types of CSS</p>
+    <ol>
+        <li>Inline CSS</li>
+        <li>External CSS</li>
+        <li>Internal CSS</li>
+    </ol>
+
+    <h2>Selectors</h2>
+    <ul>
+        <li>Element selectors are the tags used to style the code.</li>
+        <li>"*" is known as Universal selector.</li>
+        <li class="p">Hello p.p class paragraph selector.</li>
+    </ul>
+
+    <h2>Margin and padding</h2>
+    <p>Outer space around border is called margin. Inner space around border is called padding.</p>
+
+    <h1>Course</h1>
+    <span>Web CIT</span>
+    <ol>
+        <li>Python</li>
+        <li>Django</li>
+        <li>Flask</li>
+        <li>Fast API</li>
+    </ol>
+    <span>Full Stack</span>
+    <ol>
+        <li>HTML, CSS, JS</li>
+        <li>React JS</li>
+        <li>Node JS</li>
+        <li>Express JS</li>
+    </ol>
+
+    <h1>HTML</h1>
+    <p>HTML was also known as www in past. HTML was introduced in 1991. www was named as HTML in 1993. "HTML" Its 1st version was HTML 1.0 and its latest version is HTML5 which was launched in 2016.</p>
+
+    <h2 align="center">Contact Details</h2>
+    <fieldset>
+        <p>Please enter your personal details:</p>
+        <label for="firstName">First Name:* <input type="text" placeholder="First Name" id="firstName"></label>
+        <br><br>
+        <label for="lastName">Last Name:* <input type="text" placeholder="Last Name" id="lastName"></label>
+        <br><br>
+        <label for="Address">Street Address: <input type="text" placeholder="Street Address" id="Address"></label>
+        <br><br>
+        <label for="City">Town/City <input type="text" placeholder="Town/City" id="City"></label>
+        <br><br>
+        <label for="zipCode">Postcode/zip: <input type="text" placeholder="Postcode/zip" id="zipCode"></label>
+        <br><br>
+        <label for="Telephone">Telephone: <input type="tel" placeholder="Telephone" id="Telephone"></label>
+        <br><br>
+        <label for="Mobile">Mobile: <input type="tel" placeholder="Mobile" id="Mobile"></label>
+        <br><br>
+        <label for="Email">Email Address:* <input type="email" placeholder="Email Address" id="Email"></label>
+        <br><br>
+        <pre>Field marked * are required.
+        <input type="submit" value="Submit"></pre>
+    </fieldset>
+
+    <br><br>
+
+    <table border="2">
+        <caption>Home assignment</caption>
+        <tr>
+            <td>Name</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>Confirm Password</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td><input type="radio" name="Gender" id="Male">Male <input type="radio" name="Gender" id="Female">Female</td>
+        </tr>
+        <tr>
+            <td>CNIC</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Register"></td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>Creating first navigation bar</h1>
 
     <div class="nav">
         <h2>LOGO</h2>
@@ -380,3 +434,33 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
+
+</body>    </fieldset>        </form>            <label for="week">week: <input type="week" name="week" id="week"></label>            <br>
+                        <label for="url">url: <input type="url" name="url" id="url"></label>            <br>
+                        <label for="Time">Time: <input type="time" name="Time" id="Time"></label>            <br>
+                        <label for="Text">Text: <input type="text" name="Text" id="Text"></label>            <br>
+                        <label for="tel">tel: <input type="tel" name="tel" id="tel"></label>            <br>
+                        <label for="submit">submit: <input type="submit" name="submit" id="submit"></label>            <br>
+                        <label for="search">search: <input type="search" name="search" id="search"></label>            <br>
+                        <label for="reset">reset: <input type="reset" name="reset" id="reset"></label>            <br>
+                        <label for="range">range: <input type="range" name="range" id="range"></label>            <br>
+                        <label for="radio">radio: <input type="radio" name="radio" id="radio"></label>            <br>
+                        <label for="password2">password: <input type="password" name="password2" id="password2"></label>            <br>
+                        <label for="number">number: <input type="number" name="number" id="number"></label>            <br>
+                        <label for="month">month: <input type="month" name="month" id="month"></label>            <br>
+                        <label for="image">image: <input type="button" name="image" id="image"></label>            <br>
+                        <label for="hidden">hidden: <input type="hidden" name="hidden" id="hidden"></label>            <br>
+                        <label for="file">file: <input type="file" name="file" id="file"></label>            <br>
+                        <label for="email">email: <input type="email" name="email" id="email" placeholder=" Your E-Mail"></label>            <br>
+                        <label for="datetime-local">datetime-local: <input type="datetime-local" name="datetime-local" id="datetime-local"></label>            <br>
+                        <label for="color">Color: <input type="color" name="color" id="color"></label>            <br>
+                        <label for="date">Date: <input type="date" name="date" id="date"></label>            <br>
+                        <label for="checkbox">checkbox: <input type="checkbox" name="checkbox" id="checkbox"></label>            <br>
+                        <label for="button">Button: <input type="button" name="Button" id="button"></label>        <form action="" method="">        <legend>Assignment Form:</legend>    <fieldset>
+        </fieldset>
+        </form>            <textarea name="About You" id="About"></textarea>            <br>
+                        <label for="About">About You</label>            <br>
+                        <label><input type="checkbox" id="CSS" name="skill" value="css"> CSS</label>            <label><input type="checkbox" id="HTML" name="skill" value="html"> HTML</label>            <p>Skills:</p>            </p>                <label>Trans: <input type="radio" id="Trans" name="gender" value="trans"></label>                <label>Female: <input type="radio" id="Female" name="gender" value="female"></label>                <label>Male: <input type="radio" id="Male" name="gender" value="male"></label>            <p>            <input type="password" id="password" name="password">            <label for="password">Password:</label>            <br>
+                        <input type="email" id="email1" name="email">            <label for="email1">Email:</label>            <br>
+                        <input type="text" id="username" name="username">            <label for="username">Username:</label>        <form action="" method="">        <legend>Form:</legend>    <fieldset>    <!-- Forms -->
+        </table>        </tr>            <td>L2</td>            <td>L1</td>        <tr>        </tr>            <td>s2</td>            <td>s1</td>        <tr>        </tr>            <td>i2</td>            <td>i1</td>        <tr>        <caption>TABLE NUMBER 4</caption>    <table border="2">    </table>        </tr>            <td></td>            <td></td>            <td>Wahab</td>        <tr>        </tr>            <td></td>            <td colspan="2" rowspan="2">123456789</td>            <td>Wahab</td>        <tr>        </tr>            <td>Emergency</td>            <td>Contact</td>            <td>Name</td>        <tr>        <caption>Table Number 3</caption>    <table border="2">    </table>        </tfoot>            </tr>                <td>result</td>                <td>result</td>            <tr>        <tfoot>        </tbody>            </tr>                <td>20</td>                <td>WAHAB</td>            <tr>            </tr>                <td>19</td>                <td>Wahab</td>            <tr>        <tbody>        </thead>            </tr>                <th>age</th>                <th>name</th>            <tr>        <thead>        <caption>Table Number 2</caption>    <table border="2">    </table>        </tbody>            </tr>                <td>0305 jado kro odo band</td>                <td>19</td>                <td>Wahab</td>            <tr>        <tbody>        </thead>            </tr>                <th>contact</th>                <th>age</th>                <th>name</th>            <tr>        <thead>        <caption>Table Number 1</caption>    <table border="2">    <!-- Tables -->    </ol>        <li>Lists</li>        <li>Forms</li>        <li>Table</li>    <ol>    <p>Three things are most important in web development:</p>    
