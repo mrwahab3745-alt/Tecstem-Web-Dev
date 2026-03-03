@@ -48,15 +48,19 @@ h3{
     clear: both;
 }
 
-nav{
+/* nav{
     background-color: grey;
     height: 70px;
     right: 10px;
     position: sticky;
-}
+} */
 .nav{
-    height: 80px;
-    background-color: grey;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    background-color: skyblue;
+    box-shadow: 5px 5px 5px black;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .nav h2{
     float: left;
@@ -80,4 +84,32 @@ nav{
 }
 .nav ul li a:hover{
     color: tomato;
+}
+.content{
+    height: 400px;
+    background-color: whitesmoke;
+    height: 70vh;
+}
+.card1 , .card2{
+    height: 200px;
+    width: 200px;
+    background-color: grey;
+    margin: 20px;
+    float: left;
+}
+.card1{
+    float: left;
+    margin-left: 170px;
+    background-color: red;
+}
+.card2{
+    float: right;
+    margin-right: 170px;
+    background-color: blue;
+}
+.footer{
+    text-align: center;
+    align-content: center;
+    height: 20vh;
+    background-color: grey;
 }
