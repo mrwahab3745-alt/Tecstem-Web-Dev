@@ -63,7 +63,6 @@ nav > ul{
     list-style: none;
 }
 nav > ul > li{
-    background-color: cornflowerblue;
     padding: 10px;
     text-transform: uppercase;
 }
@@ -80,5 +79,12 @@ nav > ul > li:hover{
         flex-direction: column;
         height: 30vh;
     }
-    
+nav ul{flex-direction: column;}
+}
+@media screen and (min-width: 500px) and (max-width: 600px)
+{
+    nav{background-color: red;}
+    nav h1{color: white;} 
+    nav ul li .active{ color: white;}
+
 }

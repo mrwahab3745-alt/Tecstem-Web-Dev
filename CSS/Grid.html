@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid and Animations</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            background-color: blue;
+        }
+        .grid{
+            background-color: red;
+            height: 80vh;
+            display: grid;
+            /* grid-template-columns: 100px 200px; */
+            grid-template-columns: 1fr 4fr;
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+        .items{
+            background-color: green;
+        }
+        .item1{
+            grid-column-start: 1;
+            /* grid-column-end: 3; */
+            grid-column-end: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="items item1">Items</div>
+            <div class="items">Items</div>
+            <div class="items">Items</div>
+            <div class="items">Items</div>
+            <div class="items">Items</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,282 @@
+*
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <script>
+        // 1 display output
+        // console.log("Hello World")
+        // console.warn("Warning")
+        // console.info("Information Given...")
+        // alert("Its an alert")
+        // console.error("error occurred")
+        // console.log(25+25)
+
+        //02 Legal and Illegal Variable Names
+        var firstName; //Its a legal name. and its a camel case writing. Camel case writing means first alphabet will be in uppercase of every word except first word.
+        var FirstName; //Its a Pascal case writing.In it First alphabet will be in every uppercase of every word.
+        var first_name; //Its a snake case writing.In it first alphabet will be in lowercase of every word.
+        var first1Name; //Its number case writing.In it digits can be written except beginning.Cannot start from number.
+        var $first$name; //Its symbol case writing. In it only "$" dollar symbol can be used init.
+        // var 1stname; //Its an illegal name.
+
+        //03 Math Operations
+        var num1 = 10;
+        var num2 = 10;
+
+        var total = num1 + num2;
+        console.log(total)
+
+        var num1 = "5";
+        var num2 = "10";
+        var total = num1 - num2;
+        console.log(total)
+
+        var num1 = 5;
+        var num2 = 20;
+        var total = num1 ^ num2;
+        console.log(total)
+        //Swapping Methods
+        var a = 6;
+        var b = 3;
+
+        a = a ^ b; // 5 + 10
+        b = a ^ b; // 15 - 10
+        a = a ^ b; // 15 - 5 = 10
+        console.log(a, b)
+
+        var a = 10;
+        var b = 20;
+
+        a = a + b; // a=10   a+b=30 a =30
+        b = a - b; // b=20   a-b=10 b =10
+        a = a - b; // a=30   a-b=20 a =20
+        console.log(a, b)
+
+        var a = 47;
+        var b = 5;
+
+        [a, b] = [b, a];
+
+        console.log(a, b);
+
+        // 04 Data Types
+
+        var name = "Wahab"
+        console.log(name, typeof name)
+
+        var age = "19"
+        console.log(age, typeof age)
+
+        var gender = true;
+        console.log(gender, typeof gender)
+
+        var avg = 3.83
+        console.log(avg, typeof avg)
+
+        var bigint1 = 9999939999939399999939n
+        console.log(bigint1, typeof bigint1)
+
+        var symbol = Symbol("$");
+        console.log(Symbol, typeof symbol)
+
+        var arr = ["Wahab", "Ahmad"];
+        console.log(arr, typeof arr)
+
+        var obj = { "name": "Wahab", "age": 19 }
+        console.log(obj, typeof obj)
+
+        var nu = null
+        console.log(nu, typeof nu)
+
+
+        //05 Get Data from User Input
+        // var name = prompt("Enter Your Name")
+        // console.log()
+        // document.write(name)
+
+        //06 Type Casting 
+
+        // var num1 = prompt("Enter Your Number: ")
+
+        // num1 = parseInt(num1);   //parse means convert
+        // num1 = parseFloat(num1); //if we put nothing output will be NaN. NaN stands for Not a Number.
+        // num1 = Number(num1); 
+        // console.log(num1, typeof num1)
+
+        //07 If else If else condition/ Statements in Vanilla JS
+
+        // var marks = 91;
+
+        // if (marks === 90){
+        // console.log("Your marks are 90")
+        // }
+        // var marks = 90;
+
+        // if (marks === 80){
+        // console.log("Your marks are not equal to 90")
+        // }
+
+
+        // if (marks === 90){
+        // console.log("Your marks are 90")
+        // }
+        // var marks = 90;
+
+        // if (marks === 80){
+        // console.log("Your marks are not equal to 90")
+        // }
+        // else{
+        //     console.log("Your marks are neither 90 nor 80")
+        // }
+
+
+        // var marks = 85;
+
+        // if(marks >= 90 && marks <= 100){
+        //     console.log("Your Grade is A+")
+        // }
+        // else if(marks > 100){
+        // console.log("Your Marks could not be more than 100")
+        // }
+        // else if(marks >= 80 && marks < 90){
+        //     console.log("Your Grade is B+")
+        // }
+
+        // var marks = 91;
+        // var age = 21;
+        // if(marks > 90 || age > 20){
+        // console.log("You have your exams")
+        // }
+
+        // In EcmaScript
+        // var marks = 80;
+        // (marks === 90) & console.log("You have 90 marks")
+        // (marks === 90) ? console.log("You have passed") : console.log("Your marks are lower than 90")
+
+        // var edu = prompt(("Enter Your Education"))
+
+
+        // var height = parseFloat(prompt("Enter Your Height"))
+
+
+        // var age = parseInt(prompt("Enter Your Age"))
+
+        // if (edu >= 12 && height >= 5.8 ||
+        //     height >= 5.8 && age >= 18 ||
+        //     age >= 18 && edu >= 12) {
+        //     console.log("You are eligible")
+        // }
+        // else {
+        //     console.log("You are not eligible")
+        // }
+        var marks = 80;
+        (marks >= 90) ? console.log("Your marks is 90 or > 90") : (marks >= 80) & console.log("Your marks is 80 or > 80")
+
+
+        // 08 Arrays  array is non premitive data type
+
+        // var arr = []
+        // arr[0] = 5
+        // arr[2] = 10
+        // console.log(arr, typeof arr)
+
+        //  Push Method adds
+        // PoP Method deletes
+
+        // var arr = ["Wahab", "Zarak"]
+        // arr.push ("Usama")
+        // arr.push ("Shahwaiz")
+        // arr.push ("usama", "Shahwaiz")
+        // arr.unshift("shahwaiz", "Usama")
+        // arr.shift()
+        // console.log(arr, typeof arr)
+
+        //ADD and Delete 
+
+        // var arr = ["Wahab","Zarak","Usama","Mohtasham"]
+        // arr.splice(0,0,"Usama")
+        // arr.splice(1,1)
+        // arr.splice(0,1,"Subhan","Shahwaiz")
+
+        // arr[0] = "Rabia"
+        // var arr2 = arr.slice(1,3) // Stars from 1 to 3. excluding 3
+        // console.log(arr2)
+
+        //arr.slice   means copy
+
+
+        a = 10;
+        b = a;
+        console.log(a, b)
+        a = 12;
+        console.log(a,b)
+
+        var x = ["Wahab","Zarak"]
+        var y = x;
+        console.log(x,y)
+        x[1] = "Zarak";
+        console.log(x,y)
+
+        var arr = ["Data 1"]
+        var arr2 = arr.concat("Data2")
+        console.log(arr2)
+
+        var arr1 = ["Wahab","Zarak"]
+        var arr2 = ["Subhan","Shawaiz"]
+        var arr3 = arr1.concat(arr2)
+        console.log(arr3)
+
+        //LOOPS
+        // for(var i = 0; i < 10; i++){
+        //     console.log(i)
+        // }
+        // for(var i = 1; i < 10; i++){
+        //     console.log(i,"Pakistan")
+        // }
+
+        // var i = 1;
+        // while(i <= 10){
+        //     console.log("I LOVE PAKISTAN")
+        //     i++
+        // }
+
+        // var i = 5;
+        // do{
+        //     console.log(i,"PAKISTAN")
+        //     i++;
+        // }while(i < 4)
+
+        // var arr = ["Akash", "Atif","Ahtsham","AMIR"]   //for in loop show indexes of items
+        // for(i in arr){
+        //     console.log(i)
+        // }
+
+        for(i of arr){
+            console.log(i,arr)
+        }
+
+        //10 JavaScript Hoisting Interview Question
+        //Hoisting means initializing variable after call
+
+        var a; //Declare
+        console.log(a) // Call
+        a = 10; //Initialize
+
+        // ba = 20;
+        // console.log(b)
+        // let ba;
+
+        const bab = 10; //In const initializing and Declaration must be at the same time.
+        
+        
+    </script>
+</body>
+
+</html>
