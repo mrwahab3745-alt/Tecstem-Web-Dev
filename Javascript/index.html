@@ -1,4 +1,3 @@
-*
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,9 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
+    <style>
+        * {
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- <h1>JavaScript</h1> -->
+    <!-- <button onclick="wa(5)">Click Me</button> -->
+    <!-- <button onclick="wa()">WA</button> -->
+    <input type="text" placeholder="Enter Your Name" id="input">
+    <button onclick="ab()">Add on Page</button>
+    <div id="memo"></div>
+    <!-- <div id="demo" style="height: 100vh; width: 100%;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit...
+    </div> -->
     <script>
         // 1 display output
         // console.log("Hello World")
@@ -216,20 +229,20 @@
         b = a;
         console.log(a, b)
         a = 12;
-        console.log(a,b)
+        console.log(a, b)
 
-        var x = ["Wahab","Zarak"]
+        var x = ["Wahab", "Zarak"]
         var y = x;
-        console.log(x,y)
+        console.log(x, y)
         x[1] = "Zarak";
-        console.log(x,y)
+        console.log(x, y)
 
         var arr = ["Data 1"]
         var arr2 = arr.concat("Data2")
         console.log(arr2)
 
-        var arr1 = ["Wahab","Zarak"]
-        var arr2 = ["Subhan","Shawaiz"]
+        var arr1 = ["Wahab", "Zarak"]
+        var arr2 = ["Subhan", "Shawaiz"]
         var arr3 = arr1.concat(arr2)
         console.log(arr3)
 
@@ -258,24 +271,177 @@
         //     console.log(i)
         // }
 
-        for(i of arr){
-            console.log(i,arr)
-        }
+        // for(i of arr){
+        //     console.log(i,arr)
+        // }
 
         //10 JavaScript Hoisting Interview Question
         //Hoisting means initializing variable after call
 
-        var a; //Declare
-        console.log(a) // Call
-        a = 10; //Initialize
+        // var a; //Declare
+        // console.log(a) // Call
+        // a = 10; //Initialize
 
         // ba = 20;
         // console.log(b)
         // let ba;
 
-        const bab = 10; //In const initializing and Declaration must be at the same time.
-        
-        
+        // const bab = 10; //In const initializing and Declaration must be at the same time.
+
+        //11 Math Operations
+
+        // var a = Math.random() * 10
+        // console.log(a)
+
+        // var b = Math.round(4.545)
+        // console.log(b)
+
+        // var c = Math.floor(4.99999999)
+        // console.log(c)
+
+        // var d = Math.ceil(5.0000001)
+        // console.log(d)
+
+        //GUESS THE NUMBER
+
+        // var guesnumber = Math.round(Math.random()*10)
+        // console.log(guesnumber)
+
+        // var num1 = Number(prompt("Enter your number"))
+        // if(guesnumber === num1){
+        //     console.log("You Got the Number...🥳🥳🥳🥳🥳🥳")
+        // }
+        // else{
+        //     console.log("You failed It...🙂🙂🙂🙂")
+        // }
+
+        //12 FUNCTIONS    (Very Important)
+
+        //function Declaration: Regular Function
+
+        // function wa(a,b){
+        //     console.log("Hello Wahab",a+b)
+        // }
+        // wa()
+        //         function wa(){
+        //     var num1 = prompt("Enter Your Number")
+        //     var num2 = prompt("Enter 2nd number")
+        //     console.log(parseInt(num1) + parseInt(num2))
+        // }
+
+        // function compare() {
+
+        //     var guesnumber = Math.round(Math.random() * 10)
+        //     console.log(guesnumber);
+        //     var num1 = Number(prompt("Enter Your Number"))
+
+        //     if (guesnumber === num1) {
+        //         console.log("You guess the number")
+        //     }
+        //     else {
+        //         console.log("Try Again")
+        //     }
+        // }
+
+
+        //Regular function
+
+
+        // function wa(){
+        //     console.log("Hello World")
+        // }
+        // wa()
+
+        // Arrow Function
+
+
+        // var tc = ()=>{
+        //     console.log("Hello Arrow Function")
+        // }
+
+        //Try payment Gateway method
+
+        //Return
+
+        // function wa(a){
+        //     return a;
+        // }
+        // console.log(wa(12))
+
+        //function wa(a) a
+        // var wa = (a) => a;
+        // console.log(wa("WA"))
+
+        //Anonymos Function IIFE     v.imp
+        //There are two methods to create an IIFE function.
+
+        // (function(){console.log("Hello IIFE")})()
+
+        // !function(){console.log("Hello IIFE")}()
+
+        //14 DOM
+
+        //   function wa() {
+        //         var demo = document.getElementById("demo");
+        //         demo.style.color = "red";
+        //         // Note: use lowercase 'yellow' for standard CSS strings
+        //         demo.style.backgroundColor = "yellow";
+        //     }
+
+        // var num1 = Math.round(Math.random()*10)
+        // console.log(num1)
+
+        // var guesnumber = parseInt(prompt("Enter Your Number"))
+        // var demo = document.getElementById("demo")
+        // if(num1 === guesnumber){
+        //     demo.style.backgroundColor = "green"
+        // }else
+        // {
+        //     demo.style.backgroundColor = "red"
+        // }
+
+        function ab() {
+            var input = document.getElementById("input")
+            var data = document.getElementById("memo")
+            console.log(input.value);
+            // document.write(input.value);
+            // data.innerHTML = input.value
+
+            // data.innerHTML = "<h1>" + input.value + "</h1>" ; //Concatenation
+
+            data.innerHTML = `<h1> ${input.value} </h1>` // Concatenation
+            input.value = "";
+        }
+
+
+        //EJs stands for EcmaScript JavaScript
+
+        // 15 Ojects     1st step to make Objects  (API stands for Application Programming Interface)
+        // JSON Stands for JavaScript Object Notation
+
+        var obj1 = {
+            "name": "Wahab",
+            "age": 19,
+            "education":"BSCS",
+            "full name": "Wahab Ahmad"
+        }
+        console.log(obj1)
+
+        obj1.name = "Ahmad"
+        obj1["full name"] = "Wahab Ahmad"
+
+        // console.log(obj1.name)
+        console.log(obj1["full name"])
+
+        obj1["gender"] = "Male"
+        console.log(obj1)
+
+        delete obj1["full name"]
+        console.log(obj1)
+
+        // To take Keys of an object and Values
+        console.log(obj.keys(obj1))
+
     </script>
 </body>
 
