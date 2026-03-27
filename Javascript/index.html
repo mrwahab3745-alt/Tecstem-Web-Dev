@@ -422,7 +422,7 @@
         var obj1 = {
             "name": "Wahab",
             "age": 19,
-            "education":"BSCS",
+            "education": "BSCS",
             "full name": "Wahab Ahmad"
         }
         console.log(obj1)
@@ -440,8 +440,110 @@
         console.log(obj1)
 
         // To take Keys of an object and Values
-        console.log(obj.keys(obj1))
+        // console.log(obj.keys(obj1))
 
+
+              var num1 = Math.round(Math.random()*10);
+      console.log(num1)
+      var guessnumber = parseInt(prompt("enter your num"))
+      var demo = document.getElementById("demo")
+      if(num1 === guessnumber){
+        demo.style.backgroundImage = `url('assets/images.png')`;
+        // demo.style.borderWidth = "5px"
+        // demo.style.borderTop = "solid"
+        // demo.style.borderBottom = "ridge"
+        // demo.style.borderLeft = "groove"
+        // demo.style.borderRight = "blue"
+        // demo.style.border = "5px solid red"
+
+        // demo.style.borderTopStyle = "groove"
+        // demo.style.borderTopWidth = "5px"
+        // demo.style.borderTopColor = "red"
+        demo.style.borderTop = "5px groove red"
+
+        //  demo.style.borderBottomStyle = "solid"
+        // demo.style.borderBottomWidth = "5px"
+        // demo.style.borderBottomColor = "blue"
+        demo.style.borderBottom = " solid 5px blue"
+
+        //  demo.style.borderLeftStyle = "ridge"
+        // demo.style.borderLeftWidth = "5px"
+        // demo.style.borderLeftColor = "yellow"
+        demo.style.borderLeft = "ridge 5px yellow"
+
+        //  demo.style.borderRightStyle = "dotted"
+        // demo.style.borderRightWidth = "5px"
+        // demo.style.borderRightColor = "green"
+        demo.style.borderRight = "dotted 5px green"
+
+
+      }
+      else{
+        demo.style.backgroundColor = "red"
+        demo.style.borderRadius = "15px"
+      }
+
+
+        //16  Synchronus & Asynchronus
+
+        //Synchronas
+        // console.log("A")
+        // console.log("B")
+        // console.log("C")
+
+        //Asynchronas aka Promises and Set-time Method
+        // setTimeout(()=>{console.log("A")}, 1000)
+
+        // console.log("B")
+        // console.log("C")
+
+        //     fetch('https://jsonplaceholder.typicode.com/todos/1')
+        //   .then(response => response.json())
+        //   .then(json => console.log(json))
+        //     //Asynchronas
+        //   setInterval(()=>{
+        //     console.log("Wahab",)
+        //   }, 1000 )
+
+        // for (let i = 0; i <= 5; i++) {
+        //     setTimeout(() => {
+        //         console.log(i);
+        //     }, 1000);
+        // }
+
+        //17 Filter / Map Methods important
+
+        // var list = [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        // even = []
+        // for(var i = 0; i <= list.length; i++){
+        //     if(i % 2 === 0){
+        //         even.push(list[i])
+        //     }
+        // }
+        // console.log(even)
+        // var list = [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        // even = list.filter(i => i % 2 === 0)
+        // // console.log(even)
+
+        // odd = list.filter(i => i % 2 != 0)
+        // console.log(even,odd)
+
+        //Q  what is the diff b/w Map and Filter?
+        // var list = [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        // var square = list.map(i => i * i)
+        // console.log(square)
+
+        // var list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        // var square = list.map(i => i / i)
+        // console.log(square)
+        var list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        var square = []
+        for(var i = 0; i < list.length; i++)
+        {
+            var p = list[i]*list[i];
+            square.push(p)
+        }
+        console.log(square)
     </script>
 </body>
 
